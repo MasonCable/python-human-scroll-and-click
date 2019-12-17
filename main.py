@@ -2,11 +2,7 @@ from selenium import webdriver
 import pyautogui as mouse
 import time
 
-def humanMouse():
-    move = 40
 
-    for i in move:
-        mouse.moveTo(10, 20)
 
 class ExplorePage:
     def __init__(self, scrollTime, link):
@@ -20,8 +16,8 @@ class ExplorePage:
         browser = webdriver.Firefox()
         browser.get(link)
         time.sleep(scrollTime)
-        # mouse.moveTo(100, 200)
-        humanMouse()
+        mouse.moveTo(50, 50)
+        
         time.sleep(scrollTime)
         print('This worked')
 
