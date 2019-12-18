@@ -6,11 +6,11 @@ import time
 
 def moveMouse(parameter):
     ammt = parameter
-    
+
     while ammt > 0:
         mouse.moveRel(10)
         mouse.moveRel(None, 10)
-        print('hello')
+        print('moving mouse')
         ammt = ammt - 1    
 
 class ExplorePage:
@@ -32,7 +32,7 @@ class ExplorePage:
         browser = self.bot
 
         inputForm = browser.find_element_by_class_name('gLFyf')
-        inputForm.send_keys('https://ubuntu.com/')
+        inputForm.send_keys('https://textbroker.com/')
         time.sleep(2)
         inputForm.send_keys(Keys.RETURN)
         time.sleep(3)
@@ -45,9 +45,12 @@ class ExplorePage:
     
     def scrollPageAndClick(self):
         browser = self.bot
-        clickSomewhere = browser.find_element_by_class_name('p-navigation__link-anchor')
+        # clickSomewhere = browser.find_element_by_class_name('p-navigation__link-anchor')
+        signUpButton = browser.find_element_by_class_name('btn-register')
         moveMouse(3)
-        clickSomewhere.click()
+        # clickSomewhere.click()
+        moveMouse(15)
+        signUpButton.click()
 
 
         

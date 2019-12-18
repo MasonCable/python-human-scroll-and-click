@@ -294,3 +294,20 @@ Exiting due to channel error.
 1576631985166	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 1576631986204	Marionette	INFO	Listening on port 43913
 1576631986220	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wired.com/js/1bcf252b8fc56b8e3c14.app-shell.js, line 46: TypeError: e.share is undefined
+JavaScript error: https://p.ad.gt/api/v1/p/57, line 1: SyntaxError: invalid regexp group
+[Parent 9488, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-kECWsf/firefox-71.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 9488, Gecko_IOThread] WARNING: pipe error (125): Connection reset by peer: file /build/firefox-kECWsf/firefox-71.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 9488, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-kECWsf/firefox-71.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 9488, Gecko_IOThread] WARNING: pipe error (147): Connection reset by peer: file /build/firefox-kECWsf/firefox-71.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1576632324708	Marionette	INFO	Stopped listening on port 43913
+1576632387664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileohsBVO"
+1576632388012	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1576632388012	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1576632388012	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1576632388012	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1576632389228	Marionette	INFO	Listening on port 33785
+1576632389268	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 10040, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-kECWsf/firefox-71.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 10040, Gecko_IOThread] WARNING: pipe error (93): Connection reset by peer: file /build/firefox-kECWsf/firefox-71.0+build5/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1576632470582	Marionette	INFO	Stopped listening on port 33785
