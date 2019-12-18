@@ -4,13 +4,14 @@ import pyautogui as mouse
 import time
 
 
-def moveMouse():
-    parameter = 5
-    while parameter > 0:
+def moveMouse(parameter):
+    ammt = parameter
+    
+    while ammt > 0:
         mouse.moveRel(10)
         mouse.moveRel(None, 10)
         print('hello')
-        parameter = parameter - 1    
+        ammt = ammt - 1    
 
 class ExplorePage:
     def __init__(self, scrollTime, link):
@@ -26,13 +27,6 @@ class ExplorePage:
 
         browser.get(link)
         time.sleep(scrollTime)
-        # mouse.moveRel(20)
-        # mouse.moveRel(30)
-        
-        #This function works, jsut removing it for rn 
-        # moveMouse()
-        # time.sleep(scrollTime)
-        # print('This worked')
 
     def fillForm(self):
         browser = self.bot
@@ -45,10 +39,15 @@ class ExplorePage:
 
     def clickSuppliedLink(self):
         browser = self.bot
-
+        moveMouse(10)
         firstLink = browser.find_element_by_class_name('LC20lb')
         firstLink.click()
-      
+    
+    def scrollPageAndClick(self):
+        browser = self.bot
+        clickSomewhere = browser.find_element_by_class_name('p-navigation__link-anchor')
+        moveMouse(3)
+        clickSomewhere.click()
 
 
         
@@ -57,3 +56,5 @@ start = ExplorePage(5, 'https://google.com/')
 start.openBrowser()
 start.fillForm()
 start.clickSuppliedLink()
+# This is where we will want to scroll around the page in a "human link" manner
+start.scrollPageAndClick()
