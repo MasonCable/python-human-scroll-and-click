@@ -13,6 +13,7 @@ def moveMouse(parameter):
         print('moving mouse')
         ammt = ammt - 1    
 
+    print('finish')
 class ExplorePage:
     def __init__(self, scrollTime, link):
         self.scrollTime = scrollTime
@@ -49,7 +50,9 @@ class ExplorePage:
         signUpButton = browser.find_element_by_class_name('btn-register')
         moveMouse(3)
         # clickSomewhere.click()
-        moveMouse(15)
+        
+        #This causes an ussue with the page notifications
+        # moveMouse(15)
         signUpButton.click()
 
 
