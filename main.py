@@ -2,19 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pyautogui as mouse
 import time
-from optparse import OptionParser 
+from optparse import OptionParser
+from constatns import moveMouse
 
-def moveMouse(parameter):
-    ammt = parameter
-
-    while ammt > 0:
-        mouse.moveRel(10)
-        mouse.moveRel(None, 10)
-        print('moving mouse')
-        ammt = ammt - 1    
-
-    print('finish')
-    
 class ExplorePage:
     def __init__(self, scrollTime, link):
         self.scrollTime = scrollTime
